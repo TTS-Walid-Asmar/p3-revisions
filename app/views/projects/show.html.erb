@@ -1,0 +1,9 @@
+<div class="container">
+    <h1><%= @project.title %></h1>
+  <p class="text-muted">Created by <%= @project.user.email %>
+  </p>
+  <%= render @project.statuses %>
+
+  <hr />
+  <%= render partial: "statuses/form" %>
+</div>

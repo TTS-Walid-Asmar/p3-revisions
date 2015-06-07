@@ -1,0 +1,10 @@
+<%= form_for [@project, @status] do |f| %>
+
+  <div class="form-group">
+    <%= f.text_area :description, placeholder: "New status here", rows: 10, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

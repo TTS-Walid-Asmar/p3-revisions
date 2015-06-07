@@ -1,0 +1,18 @@
+<div class="row">
+      <div class="col-md-6">
+     <div class="panel panel-default">
+      <div class="panel-heading">
+          <h1>Status</h1>
+     </div>
+     <div class='panel-body'>
+             <% current_user.statuses.each do |status| %>
+
+         <h1><%= status.description %></h1>
+             <strong><p>This status was posted on <%= status.created_at.strftime("%B %e, %Y at %l:%M %p") %></p></strong>
+
+        </div>
+<% end %>
+
+      </div>
+    </div>
+</div>
